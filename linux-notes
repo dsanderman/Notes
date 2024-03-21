@@ -1,0 +1,7 @@
+#Start notes about linux
+
+sudo apt-get update
+sudo apt-get dist-upgrade
+
+or combind them
+sudo apt-get update && sudo apt-get dist-upgrade
