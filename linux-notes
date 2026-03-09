@@ -5,3 +5,20 @@ sudo apt-get dist-upgrade
 
 or combind them
 sudo apt-get update && sudo apt-get dist-upgrade
+
+ssh-keygen -t ed25519 -C "david.sanderman@gmail.com"
+cat id_ed25519
+sudo apt update && sudo apt dist-upgrade -y
+sudo pip install pygame-ce
+sudo apt install python3-venv
+cd  ~
+mkdir pygame1
+cd pygame1
+python3 -m venv pygame1
+source pygame1/bin/activate
+pip install pygame-ce
+pip list
+import pygame
+python3 -m pygame.examples.aliens
+python3 -m pygame.examples.stars
+python3 -m pygame.examples.chimp
