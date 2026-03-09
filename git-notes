@@ -19,6 +19,10 @@ Branches are an important part of working with Git. Any commits you make will be
 
 $ git branch [branch-name]
 Creates a new branch
+If branch-name isn't specified, available branches are listed
+
+$ git branch checkout [branch-name]
+Changes what branch you are working on.
 
 $ git switch -c [branch-name]
 Switches to the specified branch and updates the working directory
@@ -52,18 +56,21 @@ $ git commit -m "[descriptive message]"
 Records file snapshots permanently in version history
 
 ###
-Create repositories
-A new repository can either be created locally, or an existing repository can be cloned. When a repository was initialized locally, you have to push it to GitHub afterwards.
+2 ways to get a repositories
+    1- A new repository can either be created locally and then pushed to github afterwards.
 
-$ git init
-The git init command turns an existing directory into a new Git repository inside the folder you are running this command. After using the git init command, link the local repository to an empty GitHub repository using the following command:
+        $ git init
+        The git init command turns an existing directory into a new Git repository inside the folder you are running this command. This command creates a .git subdir in the existing dir.
+        
+        After using the git init command, link the local repository to an empty GitHub repository using the following command:
 
-$ git remote add origin [url]
-Specifies the remote repository for your local repository. The url points to a repository on GitHub.
+        $ git remote add origin [url]
+        Specifies the remote repository for your local repository. The url points to a repository on GitHub.
 
-$ git clone [url]
-Clone (download) a repository that already exists on GitHub, including all of the files, branches, and commits
+  2- An existing repository can be cloned.
 
+        $ git clone [url]
+        Clone (download) a repository that already exists on GitHub, including all of the files, branches, and commits
 ###
 Synchronize changes
 Synchronize your local repository with the remote repository on GitHub.com
@@ -79,3 +86,13 @@ Uploads all local branch commits to GitHub
 
 $ git pull
 Updates your current local working branch with all new commits from the corresponding remote branch on GitHub. git pull is a combination of git fetch and git merge
+
+$ git  status
+Check status of the repository
+$ git status -s
+Shows abrievated status
+
+$ git help <verb>
+$ git <verb> --help
+$ git <verb> -h   # For an abreviated help response
+$ man git-<verb>
