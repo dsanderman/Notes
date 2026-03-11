@@ -1,14 +1,16 @@
 #Start notes about linux
 
-sudo apt-get update
-sudo apt-get dist-upgrade
 
-or combind them
-sudo apt-get update && sudo apt-get dist-upgrade
+sudo apt update
+    # apt is more modern than apt-get
+    # update downloads pkg lists but doesn't install them. Can be used with -y suffix
+sudo apt dist-upgrade
+    # Best not to add the "-y" suffix as this command adds and deletes files
+    # Can combind them with " && " inbetween them on the same line
 
 ssh-keygen -t ed25519 -C "david.sanderman@gmail.com"
-cat id_ed25519
-sudo apt update && sudo apt dist-upgrade -y
+    # Generated SSH key pair on my chromebook. Pvt/Pub found in /.ssh dir
+    # Files are id_ed25519 and id_ed25519.pub 
 sudo pip install pygame-ce
 sudo apt install python3-venv
 cd  ~
