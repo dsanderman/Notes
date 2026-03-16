@@ -1,5 +1,30 @@
 #Notes on git
 
+# STARTING A NEW REPOSITORY
+# If you have, or make a directory that you want to use git version control, first navingate to that directory and then run the following command:
+    $ git init
+        # This creates a .git subdirectory in the existing directory. This subdirectory contains all of your necessary repository files — a Git repository skeleton. At this point, nothing in your project is tracked yet.
+        
+# After using the git init command, link the local repository to an empty GitHub repository using the following command:
+
+    $ git remote add origin [url]
+        # Specifies the remote repository for your local repository. The url points to a repository on GitHub.
+
+# You can clone an existing remote repository.
+
+    $ git clone [url]
+        # Clone (download) a repository that already exists on GitHub, including all of the files, branches, and commits
+
+# Not all files in a git repository are tracked. To track files, you need to stage them using the git add command, and then commit them to the repository with git commit.
+    $ git add *.py
+    $ git add [file]
+        # Stages the file, preparing it to be included in the next commit. You can stage files individually or in groups.
+
+# The next step is to commit the staged files to the local repository. Commits are snapshots of your entire repository at specific points in time. They allow you to go back to previous versions of your project and compare changes over time.
+
+    $ git commit -m "Add some Python files"
+        # Commits the staged snapshot to the project history. The -m option allows you to include a message describing the commit.
+
 ###
 Configure tooling
 Configure user information for all local repositories
@@ -56,22 +81,6 @@ $ git add [file]
 $ git commit -m "[descriptive message]"
     # Records file snapshots permanently in version history
 
-###
-2 ways to get a repositories
-    1- A new repository can either be created locally and then pushed to github afterwards.
-
-        $ git init
-        The git init command turns an existing directory into a new Git repository inside the folder you are running this command. This command creates a .git subdir in the existing dir.
-        
-        After using the git init command, link the local repository to an empty GitHub repository using the following command:
-
-        $ git remote add origin [url]
-        Specifies the remote repository for your local repository. The url points to a repository on GitHub.
-
-  2- An existing repository can be cloned.
-
-        $ git clone [url]
-        Clone (download) a repository that already exists on GitHub, including all of the files, branches, and commits
 ###
 Synchronize changes
 Synchronize your local repository with the remote repository on GitHub.com
