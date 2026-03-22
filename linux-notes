@@ -17,7 +17,10 @@ cd  ~
 mkdir pygame1
 cd pygame1
 python3 -m venv pygame1
-source pygame1/bin/activate
+
+source pygame1/pygame1/bin/activate
+    # To activate the virtual environment. To deactivate, just type "deactivate" in the terminal
+
 pip install pygame-ce
 pip list
 import pygame
