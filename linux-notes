@@ -14,11 +14,11 @@ ssh-keygen -t ed25519 -C "david.sanderman@gmail.com"
 sudo pip install pygame-ce
 sudo apt install python3-venv
 cd  ~
-mkdir pygame1
-cd pygame1
-python3 -m venv pygame1
+mkdir pygame
+cd pygame
+python3 -m venv pygame
 
-source pygame1/pygame1/bin/activate
+source pygame/bin/activate
     # To activate the virtual environment. To deactivate, just type "deactivate" in the terminal
 
 pip install pygame-ce
@@ -27,3 +27,12 @@ import pygame
 python3 -m pygame.examples.aliens
 python3 -m pygame.examples.stars
 python3 -m pygame.examples.chimp
+
+pip uninstall pygame-ce
+
+rmdir -rf
+    # Deletes a directory and all of its contents. Use with caution!
+
+ls -a
+    # Lists all files in the current directory, including hidden files (those that start with a dot)
+

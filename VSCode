@@ -1,1 +1,9 @@
 Notes for VS Code
+
+# In order to resolve the "Import "pygame.locals" could not be resolved" error
+    1-You need to select the correct pthon interpreter (VS Code) 
+    2-Open command palette with ctrl-shift-P
+    3-type and select "python: Slect interpreter"
+    4-Choose the interpreter located inside your venv folder
+    5-Wait a few seconds for the editor (Pylance) to re-scan the environment and clear the error
+    

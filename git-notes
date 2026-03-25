@@ -4,6 +4,7 @@
 # If you have, or make a directory that you want to use git version control, first navingate to that directory and then run the following command:
     $ git init
         # This creates a .git subdirectory in the existing directory. This subdirectory contains all of your necessary repository files — a Git repository skeleton. At this point, nothing in your project is tracked yet.
+    $ git init -b <branch-name> (like "main")
         
 # After using the git init command, link the local repository to an empty GitHub repository using the following command:
 

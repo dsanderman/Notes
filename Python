@@ -1,11 +1,14 @@
 COMMAND LINE INTERPRETER
-To enter the python shell
+#To enter the python shell
     python3
-To exit the python shell and dismiss all environment variables
+#To exit the python shell and dismiss all environment variables
     exit()
-To exit the python shell without losing the environment
+#To exit the python shell without losing the environment
     Ctrl-Z
-To return to the python shell and existing environment
+#To return to the python shell and existing environment
     fg  (foreground)
-Look at local documentation
+#Look at local documentation
    python -m pydoc -b
+
+#Run the program
+    python3 Avoid/Avoid.py
