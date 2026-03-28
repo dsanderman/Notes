@@ -7,6 +7,9 @@ sudo apt update
 sudo apt dist-upgrade
     # Best not to add the "-y" suffix as this command adds and deletes files
     # Can combind them with " && " inbetween them on the same line
+    
+# How to upgrade vscode when you have downloaded the .deb file from the website:
+sudo apt update && sudo apt install code
 
 ssh-keygen -t ed25519 -C "david.sanderman@gmail.com"
     # Generated SSH key pair on my chromebook. Pvt/Pub found in /.ssh dir
